@@ -1,0 +1,28 @@
+name: Format fixture
+description: Share a sanitized EDA-Mahn fixture or field-layout clarification.
+title: "[Fixture]: "
+labels: ["fixture", "format"]
+body:
+  - type: dropdown
+    id: direction
+    attributes:
+      label: Direction
+      options:
+        - Outbound Anwalt to Gericht
+        - Inbound Gericht to Anwalt
+    validations:
+      required: true
+  - type: input
+    id: kezi
+    attributes:
+      label: KEZI
+      placeholder: "01, 03, 05, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the fixture, source document section, or observed court response. Remove personal data.
+    validations:
+      required: true

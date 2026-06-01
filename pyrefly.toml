@@ -1,0 +1,21 @@
+preset = "basic"
+python-version = "3.13"
+python-platform = "linux"
+ignore-errors-in-generated-code = true
+permissive-ignores = true
+
+project-includes = [
+    "pyeda_mahn",
+    "tests",
+]
+
+project-excludes = [
+    "**/.venv/**",
+    "**/__pycache__/**",
+    "**/.pytest_cache/**",
+    "**/.ruff_cache/**",
+]
+
+search-path = [
+    ".",
+]
