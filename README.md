@@ -1,7 +1,6 @@
 # pyeda-mahn
 
 [![CI](https://github.com/Optimaite/pyeda-mahn/actions/workflows/ci.yml/badge.svg)](https://github.com/Optimaite/pyeda-mahn/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/pyeda-mahn.svg)](https://pypi.org/project/pyeda-mahn/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 `pyeda-mahn` is a Python encoder and parser for **EDA-Mahn**, the German fixed-width record format used for electronic data exchange in automated court dunning proceedings (*Elektronischer Datenaustausch im automatisierten gerichtlichen Mahnverfahren*).
@@ -24,8 +23,10 @@ Issues, sanitized fixtures, and real court-response edge cases are very welcome.
 ## Installation
 
 ```bash
-pip install pyeda-mahn
+pip install "pyeda-mahn @ git+https://github.com/Optimaite/pyeda-mahn.git"
 ```
+
+PyPI publishing is prepared through GitHub Actions trusted publishing, but the PyPI project/publisher still has to be activated before `pip install pyeda-mahn` works from the public index.
 
 For local development:
 
